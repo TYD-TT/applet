@@ -1,0 +1,86 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "现教中心服务平台"
+			}
+		},
+		{
+			"path": "pages/student/index",
+			"style": {
+				"navigationBarTitleText": "学生服务平台"
+			}
+		}, {
+			"path": "pages/student/basicInformation",
+			"style": {
+				"navigationBarTitleText": "学生基本信息"
+			}
+		}, {
+			"path": "pages/student/changePassword",
+			"style": {
+				"navigationBarTitleText": "学生修改密码"
+			}
+		},{
+			"path": "pages/student/student",
+			"style": {
+				"navigationBarTitleText": "开发中。。。"
+			}
+		}, {
+			"path": "pages/teacher/index",
+			"style": {
+				"navigationBarTitleText": "教师服务平台"
+			}
+		}, {
+			"path":"pages/teacher/basic",
+			"style":{
+				"navigationBarTitleText":"教师基本信息"
+			}
+		},{
+			"path": "pages/teacher/password",
+			"style": {
+				"navigationBarTitleText": "教师修改密码"
+			}
+		},{
+			"path": "pages/teacher/software",
+			"style":{
+				"navigationBarTitleText":"软件正版化安装预约服务"
+			}
+		},{
+			"path": "pages/teacher/virtual",
+			"style":{
+				"navigationBarTitleText":"虚拟服务器开通服务"
+			}
+		},{
+			"path": "pages/teacher/hosting",
+			"style":{
+				"navigationBarTitleText":"托管服务器开通服务"
+			}
+		},{
+			"path": "pages/teacher/port",
+			"style":{
+				"navigationBarTitleText":"教学区网络端口考通服务"
+			}
+		},{
+			"path": "pages/teacher/fault",
+			"style":{
+				"navigationBarTitleText":"网络故障上报服务"
+			}
+		},{
+			"path":"pages/teacher/register",
+			"style":{
+				"navigationBarTitleText":"教职工注册"
+			}
+		},{
+			"path":"pages/teacher/teacher"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "现教中心服务平台",
+		"navigationBarBackgroundColor": "#0057F5",
+		"backgroundColor": "#d1dcfd",
+		"backgroundTextStyle": "light",
+		"enablePullDownRefresh": true
+	}
+}

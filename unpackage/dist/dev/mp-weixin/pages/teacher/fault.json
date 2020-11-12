@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "网络故障上报服务",
+  "usingComponents": {
+    "evan-form": "/components/evan-form/evan-form",
+    "evan-form-item": "/components/evan-form-item/evan-form-item",
+    "uni-icons": "/components/uni-icons/uni-icons",
+    "uni-steps": "/components/uni-steps/uni-steps",
+    "lb-picker": "/components/lb-picker/index"
+  }
+}

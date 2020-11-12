@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/student/index",
+    "pages/student/basicInformation",
+    "pages/student/changePassword",
+    "pages/student/student",
+    "pages/teacher/index",
+    "pages/teacher/basic",
+    "pages/teacher/password",
+    "pages/teacher/software",
+    "pages/teacher/virtual",
+    "pages/teacher/hosting",
+    "pages/teacher/port",
+    "pages/teacher/fault",
+    "pages/teacher/register",
+    "pages/teacher/teacher"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "现教中心服务平台",
+    "navigationBarBackgroundColor": "#0057F5",
+    "backgroundColor": "#d1dcfd",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "usingComponents": {
+    "lb-picker": "/components/lb-picker/index",
+    "uni-steps": "/components/uni-steps/uni-steps"
+  },
+  "sitemapLocation": "sitemap32.json"
+}

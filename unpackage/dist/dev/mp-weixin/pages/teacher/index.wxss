@@ -1,0 +1,117 @@
+.teacher_index.data-v-82beab88 {
+  height: 205vw;
+  width: 100vw;
+}
+.teacher_index .top.data-v-82beab88 {
+  height: 45vw;
+  width: 100vw;
+  background-color: skyblue;
+  border-bottom: 2rpx;
+  -webkit-border-bottom-right-radius: 100rpx;
+          border-bottom-right-radius: 100rpx;
+  -webkit-border-bottom-left-radius: 100rpx;
+          border-bottom-left-radius: 100rpx;
+  overflow: hidden;
+}
+.teacher_index .top .top-img.data-v-82beab88 {
+  width: 100%;
+  height: 90%;
+}
+.teacher_index .welcome.data-v-82beab88 {
+  display: block;
+  width: 90vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: -10vw 0 0 5vw;
+  position: absolute;
+  border: 2rpx solid #fafafa;
+  -webkit-border-radius: 8rpx;
+          border-radius: 8rpx;
+  background-color: white;
+  -webkit-box-shadow: 0 9px 10px #999;
+          box-shadow: 0 9px 10px #999;
+}
+.teacher_index .welcome .welcome-title.data-v-82beab88 {
+  display: block;
+  margin-left: 30rpx;
+  font-size: 32rpx;
+}
+.teacher_index .content.data-v-82beab88 {
+  height: 200px;
+}
+.teacher_index .content .title.data-v-82beab88 {
+  font-size: 48rpx;
+  font-weight: 600;
+  width: 90vw;
+  margin: 100rpx auto 0 auto;
+}
+.teacher_index .content .adv.data-v-82beab88 {
+  width: 90vw;
+  height: 170rpx;
+  line-height: 170rpx;
+  background-color: blue;
+  margin: 40rpx auto 0 auto;
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
+}
+.teacher_index .content .adv .avd-img.data-v-82beab88 {
+  width: 100%;
+  height: 100%;
+}
+.teacher_index .content .list.data-v-82beab88 {
+  border: 2rpx solid #e6e6e6;
+  width: 90vw;
+  height: 85vw;
+  margin: 30rpx auto;
+}
+.teacher_index .content .list .list_logo.data-v-82beab88 {
+  margin: 30rpx auto 0 auto;
+  width: 70%;
+  height: 70%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.teacher_index .content .list .list_logo .list_img.data-v-82beab88 {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.teacher_index .content .list .list_title.data-v-82beab88 {
+  font-size: 28rpx;
+  text-align: center;
+  margin: 30rpx auto 0 auto;
+  width: 70%;
+  height: 30%;
+}
+.teacher_index .teacher_index_bottom.data-v-82beab88 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  bottom: 0;
+  width: 99vw;
+  border: 1px solid black;
+  border-bottom: none;
+  height: 100rpx;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  margin: 0 auto;
+  text-align: center;
+  position: fixed;
+  background-color: rgba(120, 214, 239, 0.5);
+}
+.teacher_index .teacher_index_bottom .bottom_sy.data-v-82beab88,
+.teacher_index .teacher_index_bottom .bottom_xx.data-v-82beab88,
+.teacher_index .teacher_index_bottom .bottom_jd.data-v-82beab88,
+.teacher_index .teacher_index_bottom .bottom_wd.data-v-82beab88 {
+  border: 1px solid #eee;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border-bottom: none;
+  width: 24.3%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+

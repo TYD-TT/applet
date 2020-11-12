@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "软件正版化安装预约服务",
+  "usingComponents": {
+    "evan-form": "/components/evan-form/evan-form",
+    "evan-form-item": "/components/evan-form-item/evan-form-item",
+    "uni-steps": "/components/uni-steps/uni-steps",
+    "lb-picker": "/components/lb-picker/index"
+  }
+}
