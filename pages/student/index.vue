@@ -1,5 +1,5 @@
 <template>
-	<view class="student_index">
+	<view class="student_index" style="background-color: #fafafa;">
 		<view class="">
 			<view class="top"><image src="../../static/img/2020_bg_logo.jpg" class="top-img"></image></view>
 			<view class="welcome">
@@ -10,16 +10,33 @@
 			<view class="title">服务项目</view>
 			<view class="adv"><image src="../../static/img/adv-logo.png" class="avd-img"></image></view>
 			<view class="list">
-				<view style="display: flex;flex-wrap: wrap; height: 70vw;">
-					<view v-for="(item, index) in lists" :key="index" style="width: 33.33%; height: 30vw; padding-top: 30rpx; border: 1px soid black;" @click="jump(item.url)">
+				<view style="display: flex;flex-wrap: wrap; height: 42vw;">
+					<view v-for="(item, index) in lists" :key="index" style="width: 33.33%; height: 30vw; border: 1px soid black;" @click="jump(item.url)">
 						<view class="list_logo"><image :src="item.img" class="list_img"></image></view>
 						<view class="list_title">{{ item.title }}</view>
 					</view>
 				</view>
 			</view>
 		</view>
+		<view class="content">
+			<view class="title" style="margin-top: 20px;">服务列表</view>
+			<view class="" style="width: 90vw; margin: 20px  auto;background-color: #fafafa;">
+				<view class="fw_list" >
+					<view class="" style="height: 100%; width: 35vw;"><image src="../../static/img/yysbd.jpg" style="width: 100%;height: 100%;"></image></view>
+					<view class="" style="height: 100%; width: 55vw; background-color: #FFF;">运营商绑定</view>
+				</view>
+				<view class="fw_list" >
+					<view class="" style="height: 100%; width: 35vw;"><image src="../../static/img/gzpc.jpg" style="width: 100%;height: 100%;"></image></view>
+					<view class="" style="height: 100%; width: 55vw; background-color: #FFF;">网络故障排查</view>
+				</view>
+				<view class="fw_list" >
+					<view class="" style="height: 100%; width: 35vw;"><image src="../../static/img/rjzbh.jpg" style="width: 100%;height: 100%;"></image></view>
+					<view class="" style="height: 100%; width: 55vw; background-color: #FFF;">软件正版化</view>
+				</view>
+			</view>
+		</view>
 		<view class="teacher_index_bottom">
-			<view class="bottom_sy" v-for="item in btm_lists" :key="item.id" @click="btm_nav(item.url)">{{item.title}}</view>
+			<view class="bottom_sy" v-for="item in btm_lists" :key="item.id" @click="btm_nav(item.url)">{{ item.title }}</view>
 		</view>
 	</view>
 </template>
@@ -56,50 +73,33 @@ export default {
 				},
 				{
 					id: 2,
-					title: '网络故障申报',
-					img: '../../static/img/gzsb.png',
+					title: '意见反馈',
+					img: '../../static/img/yjfk.png',
 					url: './student'
+				}
+			],
+			btm_lists: [
+				{
+					id: 1,
+					title: '首页',
+					url: './index'
+				},
+				{
+					id: 2,
+					title: '基本信息',
+					url: './basicInformation'
 				},
 				{
 					id: 3,
-					title: '运营商绑定',
-					img: '../../static/img/yysbd.png',
+					title: '申请进度',
 					url: './student'
 				},
 				{
 					id: 4,
-					title: '软件正版化',
-					img: '../../static/img/rjzbh.png',
+					title: '意见反馈',
 					url: './student'
-				},{
-					id:5,
-					title:'意见反馈',
-					img:'../../static/img/yjfk.png',
-					url:'./student'
 				}
-			],
-			btm_lists:[
-				{
-					id:1,
-					title:'首页',
-					url:'./index'
-				},
-				{
-					id:2,
-					title:'基本信息',
-					url:'./basicInformation'
-				},
-				{
-					id:3,
-					title:'申请进度',
-					url:'./student'
-				},
-				{
-					id:4,
-					title:'意见反馈',
-					url:'./student'
-				}
-			],
+			]
 		};
 	},
 	created() {
@@ -111,7 +111,7 @@ export default {
 			uni.getStorage({
 				key: 'student_account',
 				success: async res => {
-					const {data:row} = await this.$http({
+					const { data: row } = await this.$http({
 						url: `/select_message?account=${res.data}&user=student`,
 						method: 'GET'
 					});
@@ -128,7 +128,6 @@ export default {
 					content: '请先完善基本信息',
 					success: res => {
 						if (res.confirm) {
-							
 							uni.reLaunch({
 								url: './basicInformation'
 							});
@@ -152,14 +151,14 @@ export default {
 			uni.navigateTo({
 				url: value
 			});
-		},
+		}
 	}
 };
 </script>
 
 <style lang="less" scoped>
 .student_index {
-	height: 205vw;
+	height: 255vw;
 	width: 100vw;
 	.top {
 		height: 45vw;
@@ -196,7 +195,7 @@ export default {
 			font-size: 48rpx;
 			font-weight: 600;
 			width: 90vw;
-			margin: 100rpx auto 0 auto;
+			margin: 80rpx auto 0 auto;
 		}
 		.adv {
 			width: 90vw;
@@ -213,7 +212,7 @@ export default {
 		.list {
 			border: 2rpx solid #e6e6e6;
 			width: 90vw;
-			height: 85vw;
+			height: 42vw;
 			margin: 30rpx auto 0 auto;
 			.list_logo {
 				margin: 30rpx auto 0 auto;
@@ -238,26 +237,27 @@ export default {
 		display: flex;
 		flex-wrap: wrap;
 		bottom: 0;
-		width: 99vw;
-		border: 1px solid black;
-		border-bottom: none;
+		width: 100vw;
 		height: 100rpx;
-		border-radius: 3px;
 		margin: 0 auto;
 		text-align: center;
 		position: fixed;
-		background-color: rgba(120, 214, 239, 0.5);
+		background-color: rgba(250, 245, 254, 1);
 		.bottom_sy,
 		.bottom_xx,
 		.bottom_jd,
 		.bottom_wd {
-			border: 1px solid #eee;
-			border-radius: 3px;
-			border-bottom: none;
 			width: 24.3%;
 			height: 100rpx;
 			line-height: 100rpx;
 		}
 	}
+}
+.fw_list {
+	width: 100%;
+	height: 180rpx;
+	line-height: 180rpx;
+	display: flex;
+	margin-bottom: 10px;
 }
 </style>

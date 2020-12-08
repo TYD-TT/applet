@@ -61,7 +61,7 @@
 .teacher_index .content .list.data-v-82beab88 {
   border: 2rpx solid #e6e6e6;
   width: 90vw;
-  height: 85vw;
+  height: 120vw;
   margin: 30rpx auto;
 }
 .teacher_index .content .list .list_logo.data-v-82beab88 {

@@ -1,11 +1,7 @@
 <template>
 	<view class="changePassword">
 		<view class="changePassword_title">软件正版化安装预约服务</view>
-		<!-- <view class="changePassword_logo">
-			<view><image src="../../static/img/ay_logo.jpg" mode="aspectFill" class="img"></image></view>
-			<view class="changePassword_logo_title">安阳工学院</view>
-		</view> -->
-		<view class="tishi">请各教职员工根据安装需求，选择安装内容。如有问题，请拨打现教中心信息技术科电话：2909864。<br><span style="font-size: color:#FF0000;">*注：</span>安装系统前，请自行备份电脑内的重要文件！！！</br></view>
+		<view class="tishi">请各教职员工根据安装需求，选择安装内容。如有问题，请拨打现教中心信息技术科电话：2909864。<br><span style="font-size:18px; font-weight: 700; color:#FF0000;">*注：安装系统前，请自行备份电脑内的所有重要文件，如有丢失概不负责！！！</span></br></view>
 		<view class="changePassword_form">
 			<view class="evan-form-show">
 				<evan-form :hide-required-asterisk="hideRequiredAsterisk" ref="software" :model="software" show-message>
@@ -193,7 +189,29 @@ export default {
 		// 这里必须放在mounted中，不然h5，支付宝小程序等会找不到this.$refs.form
 		this.$refs.software.setRules(this.rules);
 	},
+	created() {
+		this.first()
+	},
 	methods: {
+		// 提示
+		first(){
+			uni.showModal({
+				title: '提示',
+				content: '请自行提前备份所有的重要文件。若未备份重装系统后导致重要文件丢失等后果自行承担。',
+				success: res => {
+					if (res.confirm) {
+						
+						uni.reLaunch({
+							url: ''
+						});
+					} else if (res.cancel) {
+						uni.redirectTo({
+							url: './index'
+						});
+					}
+				}
+			});
+		},
 		handleTap1() {
 			this.$refs.picker1.show();
 		},
@@ -258,6 +276,10 @@ export default {
 								data:this.software
 							})
 							if(row.status == 201){
+								const {data:row} = await this.$http({
+									url:'/email/admin',
+									method:'GET'
+								})
     						uni.showModal({
     						    title: '提示',
     						    content: row.message,

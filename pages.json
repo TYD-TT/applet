@@ -1,5 +1,11 @@
 {
 	"pages": [
+		// {
+		// 	"path": "pages/index/test",
+		// 	"style": {
+		// 		"navigationBarTitleText": "现教中心服务平台"
+		// 	}
+		// },
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -72,7 +78,22 @@
 				"navigationBarTitleText":"教职工注册"
 			}
 		},{
-			"path":"pages/teacher/teacher"
+			"path":"pages/feedback/feedback",
+			"style":{
+				"navigationBarTitleText":"意见反馈"
+			}
+		},
+		{
+			"path":"pages/teacher/steps",
+			"style":{
+				"navigationBarTitleText":"申请进度"
+			}
+		},
+		{
+			"path":"pages/teacher/appraise",
+			"style":{
+				"navigationBarTitleText":"软件正版化评价"
+			}
 		}
 	],
 	"globalStyle": {

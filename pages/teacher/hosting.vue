@@ -304,6 +304,10 @@ export default {
     						data:this.hosting
     					})
     					if(row.status == 201){
+								const {data:row} = await this.$http({
+									url:'/email/admin',
+									method:'GET'
+								})
     						uni.showModal({
     						    title: '提示',
     						    content: row.message,

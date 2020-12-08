@@ -14,7 +14,9 @@
     "pages/teacher/port",
     "pages/teacher/fault",
     "pages/teacher/register",
-    "pages/teacher/teacher"
+    "pages/feedback/feedback",
+    "pages/teacher/steps",
+    "pages/teacher/appraise"
   ],
   "subPackages": [],
   "window": {
@@ -28,6 +30,5 @@
   "usingComponents": {
     "lb-picker": "/components/lb-picker/index",
     "uni-steps": "/components/uni-steps/uni-steps"
-  },
-  "sitemapLocation": "sitemap.json"
+  }
 }

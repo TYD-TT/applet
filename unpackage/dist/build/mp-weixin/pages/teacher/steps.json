@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "申请进度",
+  "usingComponents": {
+    "uni-collapse": "/components/uni-collapse/uni-collapse",
+    "uni-collapse-item": "/components/uni-collapse-item/uni-collapse-item",
+    "t-table": "/components/t-table/t-table",
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "uni-steps": "/components/uni-steps/uni-steps",
+    "t-th": "/components/t-table/t-th",
+    "t-tr": "/components/t-table/t-tr",
+    "t-td": "/components/t-table/t-td",
+    "uni-rate": "/components/uni-rate/uni-rate"
+  }
+}

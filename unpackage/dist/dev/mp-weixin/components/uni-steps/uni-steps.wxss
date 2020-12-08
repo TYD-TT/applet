@@ -104,9 +104,9 @@
   text-align: center;
 }
 .uni-steps__column-title.data-v-61dda2da {
-  font-size: 28rpx;
+  font-size: 16px;
   text-align: left;
-  line-height: 18px;
+  line-height: 20px;
 }
 .uni-steps__row-desc.data-v-61dda2da {
   font-size: 12px;
@@ -114,9 +114,9 @@
   text-align: center;
 }
 .uni-steps__column-desc.data-v-61dda2da {
-  font-size: 24rpx;
+  font-size: 13px;
   text-align: left;
-  line-height: 18px;
+  line-height: 20px;
 }
 .uni-steps__row-container.data-v-61dda2da {
   display: -webkit-box;

@@ -106,8 +106,8 @@ export default {
 						message: '请输入学号'
 					},
 					{
-						min: 11,
-						max: 11,
+						min: 9,
+						max: 12,
 						message: '学号长度11位'
 					}
 				],

@@ -2,7 +2,7 @@
 
 /***/ 66:
 /*!***************************************************************!*\
-  !*** E:/桌面/信息服务平台/main.js?{"page":"pages%2Fteacher%2Fbasic"} ***!
+  !*** E:/桌面/applet/main.js?{"page":"pages%2Fteacher%2Fbasic"} ***!
   \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18,7 +18,7 @@ createPage(_basic.default);
 
 /***/ 67:
 /*!********************************************!*\
-  !*** E:/桌面/信息服务平台/pages/teacher/basic.vue ***!
+  !*** E:/桌面/applet/pages/teacher/basic.vue ***!
   \********************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -59,7 +59,7 @@ component.options.__file = "pages/teacher/basic.vue"
 
 /***/ 68:
 /*!***************************************************************************************!*\
-  !*** E:/桌面/信息服务平台/pages/teacher/basic.vue?vue&type=template&id=ed0970d0&scoped=true& ***!
+  !*** E:/桌面/applet/pages/teacher/basic.vue?vue&type=template&id=ed0970d0&scoped=true& ***!
   \***************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -81,7 +81,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ 69:
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/信息服务平台/pages/teacher/basic.vue?vue&type=template&id=ed0970d0&scoped=true& ***!
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/applet/pages/teacher/basic.vue?vue&type=template&id=ed0970d0&scoped=true& ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -94,10 +94,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   evanForm: function() {
-    return __webpack_require__.e(/*! import() | components/evan-form/evan-form */ "components/evan-form/evan-form").then(__webpack_require__.bind(null, /*! @/components/evan-form/evan-form.vue */ 151))
+    return Promise.all(/*! import() | components/evan-form/evan-form */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/evan-form/evan-form")]).then(__webpack_require__.bind(null, /*! @/components/evan-form/evan-form.vue */ 167))
   },
   evanFormItem: function() {
-    return __webpack_require__.e(/*! import() | components/evan-form-item/evan-form-item */ "components/evan-form-item/evan-form-item").then(__webpack_require__.bind(null, /*! @/components/evan-form-item/evan-form-item.vue */ 158))
+    return __webpack_require__.e(/*! import() | components/evan-form-item/evan-form-item */ "components/evan-form-item/evan-form-item").then(__webpack_require__.bind(null, /*! @/components/evan-form-item/evan-form-item.vue */ 174))
   }
 }
 var render = function() {
@@ -115,7 +115,7 @@ render._withStripped = true
 
 /***/ 70:
 /*!*********************************************************************!*\
-  !*** E:/桌面/信息服务平台/pages/teacher/basic.vue?vue&type=script&lang=js& ***!
+  !*** E:/桌面/applet/pages/teacher/basic.vue?vue&type=script&lang=js& ***!
   \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -131,7 +131,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ 71:
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/信息服务平台/pages/teacher/basic.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/applet/pages/teacher/basic.vue?vue&type=script&lang=js& ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -192,7 +192,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-form/utils.js */ 38));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var LbPicker = function LbPicker() {Promise.all(/*! require.ensure | components/lb-picker/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/lb-picker/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/lb-picker */ 136));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-form/utils.js */ 38));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var LbPicker = function LbPicker() {Promise.all(/*! require.ensure | components/lb-picker/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/lb-picker/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/lb-picker */ 152));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 {
@@ -435,7 +435,7 @@ var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-fo
 
 /***/ 72:
 /*!******************************************************************************************************!*\
-  !*** E:/桌面/信息服务平台/pages/teacher/basic.vue?vue&type=style&index=0&id=ed0970d0&lang=scss&scoped=true& ***!
+  !*** E:/桌面/applet/pages/teacher/basic.vue?vue&type=style&index=0&id=ed0970d0&lang=scss&scoped=true& ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -451,7 +451,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ 73:
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/信息服务平台/pages/teacher/basic.vue?vue&type=style&index=0&id=ed0970d0&lang=scss&scoped=true& ***!
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/applet/pages/teacher/basic.vue?vue&type=style&index=0&id=ed0970d0&lang=scss&scoped=true& ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {

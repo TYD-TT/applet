@@ -1937,7 +1937,7 @@ function normalizeComponent (
 
 /***/ 11:
 /*!********************************!*\
-  !*** E:/桌面/信息服务平台/util/api.js ***!
+  !*** E:/桌面/applet/util/api.js ***!
   \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -1995,7 +1995,7 @@ var myRequest = function myRequest(options) {
 
 /***/ 12:
 /*!*********************************!*\
-  !*** E:/桌面/信息服务平台/util/data.js ***!
+  !*** E:/桌面/applet/util/data.js ***!
   \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -2009,25 +2009,21 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     var year = nn.getFullYear();
     var month = nn.getMonth() + 1;
     var nowDate = nn.getDate();
-    var hours = nn.getHours();
     if (month >= 1 && month <= 9) {
       month = "0" + month;
     }
     if (nowDate >= 0 && nowDate <= 9) {
       nowDate = "0" + nowDate;
     }
-    if (hours >= 0 && hours <= 9) {
-      hours = "0" + hours;
-    }
-    var newDate = year + seperator + month + seperator + nowDate + ' ' + hours;
+    var newDate = year + seperator + month + seperator + nowDate;
     return newDate;
   } };exports.default = _default;
 
 /***/ }),
 
-/***/ 141:
+/***/ 157:
 /*!**************************************************!*\
-  !*** E:/桌面/信息服务平台/components/lb-picker/utils.js ***!
+  !*** E:/桌面/applet/components/lb-picker/utils.js ***!
   \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -2157,212 +2153,145 @@ function getColumns(_ref) {var value = _ref.value,list = _ref.list,mode = _ref.m
 
 /***/ }),
 
-/***/ 170:
+/***/ 186:
 /*!**************************************************!*\
-  !*** E:/桌面/信息服务平台/components/uni-icons/icons.js ***!
+  !*** E:/桌面/applet/components/uni-icons/icons.js ***!
   \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  'contact': "\uE100",
-  'person': "\uE101",
-  'personadd': "\uE102",
-  'contact-filled': "\uE130",
-  'person-filled': "\uE131",
-  'personadd-filled': "\uE132",
-  'phone': "\uE200",
-  'email': "\uE201",
-  'chatbubble': "\uE202",
-  'chatboxes': "\uE203",
-  'phone-filled': "\uE230",
-  'email-filled': "\uE231",
-  'chatbubble-filled': "\uE232",
-  'chatboxes-filled': "\uE233",
-  'weibo': "\uE260",
-  'weixin': "\uE261",
-  'pengyouquan': "\uE262",
-  'chat': "\uE263",
-  'qq': "\uE264",
-  'videocam': "\uE300",
-  'camera': "\uE301",
-  'mic': "\uE302",
-  'location': "\uE303",
-  'mic-filled': "\uE332",
-  'speech': "\uE332",
-  'location-filled': "\uE333",
-  'micoff': "\uE360",
-  'image': "\uE363",
-  'map': "\uE364",
-  'compose': "\uE400",
-  'trash': "\uE401",
-  'upload': "\uE402",
-  'download': "\uE403",
-  'close': "\uE404",
-  'redo': "\uE405",
-  'undo': "\uE406",
-  'refresh': "\uE407",
-  'star': "\uE408",
-  'plus': "\uE409",
-  'minus': "\uE410",
-  'circle': "\uE411",
-  'checkbox': "\uE411",
-  'close-filled': "\uE434",
-  'clear': "\uE434",
-  'refresh-filled': "\uE437",
-  'star-filled': "\uE438",
-  'plus-filled': "\uE439",
-  'minus-filled': "\uE440",
-  'circle-filled': "\uE441",
-  'checkbox-filled': "\uE442",
-  'closeempty': "\uE460",
-  'refreshempty': "\uE461",
-  'reload': "\uE462",
-  'starhalf': "\uE463",
-  'spinner': "\uE464",
-  'spinner-cycle': "\uE465",
-  'search': "\uE466",
-  'plusempty': "\uE468",
-  'forward': "\uE470",
-  'back': "\uE471",
-  'left-nav': "\uE471",
-  'checkmarkempty': "\uE472",
-  'home': "\uE500",
-  'navigate': "\uE501",
-  'gear': "\uE502",
-  'paperplane': "\uE503",
-  'info': "\uE504",
-  'help': "\uE505",
-  'locked': "\uE506",
-  'more': "\uE507",
-  'flag': "\uE508",
-  'home-filled': "\uE530",
-  'gear-filled': "\uE532",
-  'info-filled': "\uE534",
-  'help-filled': "\uE535",
-  'more-filled': "\uE537",
-  'settings': "\uE560",
-  'list': "\uE562",
-  'bars': "\uE563",
-  'loop': "\uE565",
-  'paperclip': "\uE567",
-  'eye': "\uE568",
-  'arrowup': "\uE580",
-  'arrowdown': "\uE581",
-  'arrowleft': "\uE582",
-  'arrowright': "\uE583",
-  'arrowthinup': "\uE584",
-  'arrowthindown': "\uE585",
-  'arrowthinleft': "\uE586",
-  'arrowthinright': "\uE587",
-  'pulldown': "\uE588",
-  'closefill': "\uE589",
-  'sound': "\uE590",
-  'scan': "\uE612" };exports.default = _default;
-
-/***/ }),
-
-/***/ 178:
-/*!*********************************************************!*\
-  !*** E:/桌面/信息服务平台/components/lb-picker/mixins/index.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.commonMixin = void 0;var _utils = __webpack_require__(/*! ../utils */ 141);
-var commonMixin = {
-  data: function data() {
-    return {
-      isConfirmChange: false,
-      indicatorStyle: "height: 34px",
-      pressTimeout: null };
-
-  },
-  created: function created() {
-    this.init('init');
-  },
-  methods: {
-    init: function init(changeType) {
-      if (this.list && this.list.length) {
-        var column = (0, _utils.getColumns)({
-          value: this.value,
-          list: this.list,
-          mode: this.mode,
-          props: this.props,
-          level: this.level });var
-
-        columns = column.columns,value = column.value,item = column.item,index = column.index;
-        this.selectValue = value;
-        this.selectItem = item;
-        this.pickerColumns = columns;
-        this.pickerValue = index;
-        this.$emit('change', {
-          value: this.selectValue,
-          item: this.selectItem,
-          index: this.pickerValue,
-          change: changeType });
-
-      }
-    },
-    touchstart: function touchstart(e) {var _this = this;
-      if (!this.pressEnable) return;
-      clearTimeout(this.pressTimeout);
-      this.pressTimeout = setTimeout(function () {
-        var item = {};
-        var toastTitle = '';
-
-
-
-
-
-
-
-
-
-        item = e.currentTarget.dataset.item;
-
-
-
-
-
-
-
-        toastTitle = item[_this.props.label] || item;
-
-        uni.showToast({
-          title: toastTitle,
-          icon: 'none' });
-
-      }, this.pressTime);
-    },
-    touchmove: function touchmove() {
-      if (!this.pressEnable) return;
-      clearTimeout(this.pressTimeout);
-    },
-    touchend: function touchend() {
-      if (!this.pressEnable) return;
-      clearTimeout(this.pressTimeout);
-    },
-    getLabel: function getLabel(item, rowIndex, columnIndex) {
-      if (this.formatter && (0, _utils.isFunction)(this.formatter)) {
-        return this.formatter({ item: item, rowIndex: rowIndex, columnIndex: columnIndex });
-      } else {
-        return item[this.props.label] || item;
-      }
-    } },
-
-  watch: {
-    value: function value() {
-      if (!this.isConfirmChange) {
-        this.init('value');
-      }
-    },
-    list: function list() {
-      this.init('list');
-    } } };exports.commonMixin = commonMixin;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+  "pulldown": "\uE588",
+  "refreshempty": "\uE461",
+  "back": "\uE471",
+  "forward": "\uE470",
+  "more": "\uE507",
+  "more-filled": "\uE537",
+  "scan": "\uE612",
+  "qq": "\uE264",
+  "weibo": "\uE260",
+  "weixin": "\uE261",
+  "pengyouquan": "\uE262",
+  "loop": "\uE565",
+  "refresh": "\uE407",
+  "refresh-filled": "\uE437",
+  "arrowthindown": "\uE585",
+  "arrowthinleft": "\uE586",
+  "arrowthinright": "\uE587",
+  "arrowthinup": "\uE584",
+  "undo-filled": "\uE7D6",
+  "undo": "\uE406",
+  "redo": "\uE405",
+  "redo-filled": "\uE7D9",
+  "bars": "\uE563",
+  "chatboxes": "\uE203",
+  "camera": "\uE301",
+  "chatboxes-filled": "\uE233",
+  "camera-filled": "\uE7EF",
+  "cart-filled": "\uE7F4",
+  "cart": "\uE7F5",
+  "checkbox-filled": "\uE442",
+  "checkbox": "\uE7FA",
+  "arrowleft": "\uE582",
+  "arrowdown": "\uE581",
+  "arrowright": "\uE583",
+  "smallcircle-filled": "\uE801",
+  "arrowup": "\uE580",
+  "circle": "\uE411",
+  "eye-filled": "\uE568",
+  "eye-slash-filled": "\uE822",
+  "eye-slash": "\uE823",
+  "eye": "\uE824",
+  "flag-filled": "\uE825",
+  "flag": "\uE508",
+  "gear-filled": "\uE532",
+  "reload": "\uE462",
+  "gear": "\uE502",
+  "hand-thumbsdown-filled": "\uE83B",
+  "hand-thumbsdown": "\uE83C",
+  "hand-thumbsup-filled": "\uE83D",
+  "heart-filled": "\uE83E",
+  "hand-thumbsup": "\uE83F",
+  "heart": "\uE840",
+  "home": "\uE500",
+  "info": "\uE504",
+  "home-filled": "\uE530",
+  "info-filled": "\uE534",
+  "circle-filled": "\uE441",
+  "chat-filled": "\uE847",
+  "chat": "\uE263",
+  "mail-open-filled": "\uE84D",
+  "email-filled": "\uE231",
+  "mail-open": "\uE84E",
+  "email": "\uE201",
+  "checkmarkempty": "\uE472",
+  "list": "\uE562",
+  "locked-filled": "\uE856",
+  "locked": "\uE506",
+  "map-filled": "\uE85C",
+  "map-pin": "\uE85E",
+  "map-pin-ellipse": "\uE864",
+  "map": "\uE364",
+  "minus-filled": "\uE440",
+  "mic-filled": "\uE332",
+  "minus": "\uE410",
+  "micoff": "\uE360",
+  "mic": "\uE302",
+  "clear": "\uE434",
+  "smallcircle": "\uE868",
+  "close": "\uE404",
+  "closeempty": "\uE460",
+  "paperclip": "\uE567",
+  "paperplane": "\uE503",
+  "paperplane-filled": "\uE86E",
+  "person-filled": "\uE131",
+  "contact-filled": "\uE130",
+  "person": "\uE101",
+  "contact": "\uE100",
+  "images-filled": "\uE87A",
+  "phone": "\uE200",
+  "images": "\uE87B",
+  "image": "\uE363",
+  "image-filled": "\uE877",
+  "location-filled": "\uE333",
+  "location": "\uE303",
+  "plus-filled": "\uE439",
+  "plus": "\uE409",
+  "plusempty": "\uE468",
+  "help-filled": "\uE535",
+  "help": "\uE505",
+  "navigate-filled": "\uE884",
+  "navigate": "\uE501",
+  "mic-slash-filled": "\uE892",
+  "search": "\uE466",
+  "settings": "\uE560",
+  "sound": "\uE590",
+  "sound-filled": "\uE8A1",
+  "spinner-cycle": "\uE465",
+  "download-filled": "\uE8A4",
+  "personadd-filled": "\uE132",
+  "videocam-filled": "\uE8AF",
+  "personadd": "\uE102",
+  "upload": "\uE402",
+  "upload-filled": "\uE8B1",
+  "starhalf": "\uE463",
+  "star-filled": "\uE438",
+  "star": "\uE408",
+  "trash": "\uE401",
+  "phone-filled": "\uE230",
+  "compose": "\uE400",
+  "videocam": "\uE300",
+  "trash-filled": "\uE8DC",
+  "download": "\uE403",
+  "chatbubble-filled": "\uE232",
+  "chatbubble": "\uE202",
+  "cloud-download": "\uE8E4",
+  "cloud-upload-filled": "\uE8E5",
+  "cloud-upload": "\uE8E6",
+  "cloud-download-filled": "\uE8E9",
+  "headphones": "\uE8BF",
+  "shop": "\uE609" };exports.default = _default;
 
 /***/ }),
 
@@ -9204,6 +9133,175 @@ if (hadRuntime) {
 
 /***/ }),
 
+/***/ 215:
+/*!**************************************************!*\
+  !*** E:/桌面/applet/components/uni-popup/popup.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _message = _interopRequireDefault(__webpack_require__(/*! ./message.js */ 216));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+// 定义 type 类型:弹出类型：top/bottom/center
+var config = {
+  // 顶部弹出
+  top: 'top',
+  // 底部弹出
+  bottom: 'bottom',
+  // 居中弹出
+  center: 'center',
+  // 消息提示
+  message: 'top',
+  // 对话框
+  dialog: 'center',
+  // 分享
+  share: 'bottom' };var _default =
+
+
+{
+  data: function data() {
+    return {
+      config: config };
+
+  },
+  mixins: [_message.default] };exports.default = _default;
+
+/***/ }),
+
+/***/ 216:
+/*!****************************************************!*\
+  !*** E:/桌面/applet/components/uni-popup/message.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  created: function created() {
+    if (this.type === 'message') {
+      // 不显示遮罩
+      this.maskShow = false;
+      // 获取子组件对象
+      this.childrenMsg = null;
+    }
+  },
+  methods: {
+    customOpen: function customOpen() {
+      if (this.childrenMsg) {
+        this.childrenMsg.open();
+      }
+    },
+    customClose: function customClose() {
+      if (this.childrenMsg) {
+        this.childrenMsg.close();
+      }
+    } } };exports.default = _default;
+
+/***/ }),
+
+/***/ 252:
+/*!*********************************************************!*\
+  !*** E:/桌面/applet/components/lb-picker/mixins/index.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.commonMixin = void 0;var _utils = __webpack_require__(/*! ../utils */ 157);
+var commonMixin = {
+  data: function data() {
+    return {
+      isConfirmChange: false,
+      indicatorStyle: "height: 34px",
+      pressTimeout: null };
+
+  },
+  created: function created() {
+    this.init('init');
+  },
+  methods: {
+    init: function init(changeType) {
+      if (this.list && this.list.length) {
+        var column = (0, _utils.getColumns)({
+          value: this.value,
+          list: this.list,
+          mode: this.mode,
+          props: this.props,
+          level: this.level });var
+
+        columns = column.columns,value = column.value,item = column.item,index = column.index;
+        this.selectValue = value;
+        this.selectItem = item;
+        this.pickerColumns = columns;
+        this.pickerValue = index;
+        this.$emit('change', {
+          value: this.selectValue,
+          item: this.selectItem,
+          index: this.pickerValue,
+          change: changeType });
+
+      }
+    },
+    touchstart: function touchstart(e) {var _this = this;
+      if (!this.pressEnable) return;
+      clearTimeout(this.pressTimeout);
+      this.pressTimeout = setTimeout(function () {
+        var item = {};
+        var toastTitle = '';
+
+
+
+
+
+
+
+
+
+        item = e.currentTarget.dataset.item;
+
+
+
+
+
+
+
+        toastTitle = item[_this.props.label] || item;
+
+        uni.showToast({
+          title: toastTitle,
+          icon: 'none' });
+
+      }, this.pressTime);
+    },
+    touchmove: function touchmove() {
+      if (!this.pressEnable) return;
+      clearTimeout(this.pressTimeout);
+    },
+    touchend: function touchend() {
+      if (!this.pressEnable) return;
+      clearTimeout(this.pressTimeout);
+    },
+    getLabel: function getLabel(item, rowIndex, columnIndex) {
+      if (this.formatter && (0, _utils.isFunction)(this.formatter)) {
+        return this.formatter({ item: item, rowIndex: rowIndex, columnIndex: columnIndex });
+      } else {
+        return item[this.props.label] || item;
+      }
+    } },
+
+  watch: {
+    value: function value() {
+      if (!this.isConfirmChange) {
+        this.init('value');
+      }
+    },
+    list: function list() {
+      this.init('list');
+    } } };exports.commonMixin = commonMixin;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
 /***/ 3:
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -9237,7 +9335,7 @@ module.exports = g;
 
 /***/ 38:
 /*!**************************************************!*\
-  !*** E:/桌面/信息服务平台/components/evan-form/utils.js ***!
+  !*** E:/桌面/applet/components/evan-form/utils.js ***!
   \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -9397,7 +9495,7 @@ utils;exports.default = _default;
 
 /***/ 39:
 /*!*******************************************************************!*\
-  !*** E:/桌面/信息服务平台/node_modules/async-validator/dist-web/index.js ***!
+  !*** E:/桌面/applet/node_modules/async-validator/dist-web/index.js ***!
   \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -10848,7 +10946,7 @@ Schema;exports.default = _default;
 
 /***/ 4:
 /*!*******************************!*\
-  !*** E:/桌面/信息服务平台/pages.json ***!
+  !*** E:/桌面/applet/pages.json ***!
   \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {

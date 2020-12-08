@@ -2,7 +2,7 @@
 
 /***/ 114:
 /*!***************************************************************!*\
-  !*** E:/桌面/信息服务平台/main.js?{"page":"pages%2Fteacher%2Ffault"} ***!
+  !*** E:/桌面/applet/main.js?{"page":"pages%2Fteacher%2Ffault"} ***!
   \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18,7 +18,7 @@ createPage(_fault.default);
 
 /***/ 115:
 /*!********************************************!*\
-  !*** E:/桌面/信息服务平台/pages/teacher/fault.vue ***!
+  !*** E:/桌面/applet/pages/teacher/fault.vue ***!
   \********************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -59,7 +59,7 @@ component.options.__file = "pages/teacher/fault.vue"
 
 /***/ 116:
 /*!***************************************************************************************!*\
-  !*** E:/桌面/信息服务平台/pages/teacher/fault.vue?vue&type=template&id=4a67938c&scoped=true& ***!
+  !*** E:/桌面/applet/pages/teacher/fault.vue?vue&type=template&id=4a67938c&scoped=true& ***!
   \***************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -81,7 +81,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ 117:
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/信息服务平台/pages/teacher/fault.vue?vue&type=template&id=4a67938c&scoped=true& ***!
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/applet/pages/teacher/fault.vue?vue&type=template&id=4a67938c&scoped=true& ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -94,16 +94,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   evanForm: function() {
-    return __webpack_require__.e(/*! import() | components/evan-form/evan-form */ "components/evan-form/evan-form").then(__webpack_require__.bind(null, /*! @/components/evan-form/evan-form.vue */ 151))
+    return Promise.all(/*! import() | components/evan-form/evan-form */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/evan-form/evan-form")]).then(__webpack_require__.bind(null, /*! @/components/evan-form/evan-form.vue */ 167))
   },
   evanFormItem: function() {
-    return __webpack_require__.e(/*! import() | components/evan-form-item/evan-form-item */ "components/evan-form-item/evan-form-item").then(__webpack_require__.bind(null, /*! @/components/evan-form-item/evan-form-item.vue */ 158))
+    return __webpack_require__.e(/*! import() | components/evan-form-item/evan-form-item */ "components/evan-form-item/evan-form-item").then(__webpack_require__.bind(null, /*! @/components/evan-form-item/evan-form-item.vue */ 174))
   },
   uniIcons: function() {
-    return Promise.all(/*! import() | components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-icons/uni-icons")]).then(__webpack_require__.bind(null, /*! @/components/uni-icons/uni-icons.vue */ 165))
+    return Promise.all(/*! import() | components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-icons/uni-icons")]).then(__webpack_require__.bind(null, /*! @/components/uni-icons/uni-icons.vue */ 181))
   },
   uniSteps: function() {
-    return __webpack_require__.e(/*! import() | components/uni-steps/uni-steps */ "components/uni-steps/uni-steps").then(__webpack_require__.bind(null, /*! @/components/uni-steps/uni-steps.vue */ 144))
+    return __webpack_require__.e(/*! import() | components/uni-steps/uni-steps */ "components/uni-steps/uni-steps").then(__webpack_require__.bind(null, /*! @/components/uni-steps/uni-steps.vue */ 160))
   }
 }
 var render = function() {
@@ -121,7 +121,7 @@ render._withStripped = true
 
 /***/ 118:
 /*!*********************************************************************!*\
-  !*** E:/桌面/信息服务平台/pages/teacher/fault.vue?vue&type=script&lang=js& ***!
+  !*** E:/桌面/applet/pages/teacher/fault.vue?vue&type=script&lang=js& ***!
   \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -137,7 +137,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ 119:
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/信息服务平台/pages/teacher/fault.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/applet/pages/teacher/fault.vue?vue&type=script&lang=js& ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -213,11 +213,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-form/utils.js */ 38));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var LbPicker = function LbPicker() {Promise.all(/*! require.ensure | components/lb-picker/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/lb-picker/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/lb-picker */ 136));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniIcons = function uniIcons() {Promise.all(/*! require.ensure | components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-icons/uni-icons")]).then((function () {return resolve(__webpack_require__(/*! @/components/uni-icons/uni-icons.vue */ 165));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-form/utils.js */ 38));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var LbPicker = function LbPicker() {Promise.all(/*! require.ensure | components/lb-picker/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/lb-picker/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/lb-picker */ 152));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniIcons = function uniIcons() {Promise.all(/*! require.ensure | components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-icons/uni-icons")]).then((function () {return resolve(__webpack_require__(/*! @/components/uni-icons/uni-icons.vue */ 181));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -243,8 +239,8 @@ var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-fo
       hideRequiredAsterisk: false,
       imgURL: [],
       fault: {
-        account: "",
-        phone: "",
+        account: '',
+        phone: '',
         address: '',
         fault_type: '',
         fault_message: '',
@@ -255,19 +251,15 @@ var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-fo
         service_type: 'fault' },
 
       imageLists: [],
-      list1: [
-      { label: "网络接口问题", value: "1" },
-      { label: "各信息化系统", value: "2" },
-      { label: "校园网站群", value: "3" }],
-
-      label1: "",
+      list1: [{ label: '网络接口问题', value: '1' }, { label: '各信息化系统', value: '2' }, { label: '校园网站群', value: '3' }],
+      label1: '',
       value1: [],
       active: 0,
       // 校验规则
       rules: {
         account: {
           required: true,
-          message: "请输入工号" },
+          message: '请输入工号' },
 
         phone: [
         {
@@ -282,20 +274,19 @@ var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-fo
 
         fault_type: {
           required: true,
-          message: "请选择部门类型" },
+          message: '请选择部门类型' },
 
         fault_message: {
           required: true,
-          message: "请输入故障描述" },
+          message: '请输入故障描述' },
 
         section: {
           required: true,
-          message: "请输入所在部门" },
+          message: '请输入所在部门' },
 
         address: {
           required: true,
-          message: "请输入故障地址" } } };
-
+          message: '请输入故障地址' } } };
 
 
 
@@ -322,7 +313,7 @@ var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-fo
     handleConfirm1: function handleConfirm1(e) {
       if (e) {
         var name = e.dataset.name;
-        var label = e.item.map(function (m) {return m.label;}).join("-");
+        var label = e.item.map(function (m) {return m.label;}).join('-');
         this.value1 = label;
         this.fault.fault_type = label;
         console.log(label);
@@ -366,42 +357,48 @@ var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-fo
                     name: 'file',
                     success: function success(uploadFileRes) {
                       _this4.imgURL.push(uploadFileRes.data);
-                    } }));case 2:result = _context2.sent;return _context2.abrupt("return",
+                    } }));case 2:result = _context2.sent;
 
-                result);case 4:case "end":return _context2.stop();}}}, _callee2);}))();
+                console.log('this.$http');
+                console.log(result);return _context2.abrupt("return",
+                result);case 6:case "end":return _context2.stop();}}}, _callee2);}))();
     },
     del: function del(index) {
       this.imageLists.splice(index, 1);
     },
     save: function save() {var _this5 = this;
-      this.$refs.fault.validate( /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3(res) {var _yield$_this5$$http, row;return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:
+      this.$refs.fault.validate( /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3(res) {var _yield$_this5$$http, row, _yield$_this5$$http2, _row;return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:
                   _this5.fault.creat_time = _this5.$getFormatDate.getFormatDate();
-                  _this5.fault.people_type = 'teacher',
-                  _this5.fault.service_type = 'fault';if (!
-                  res) {_context3.next = 9;break;}
+                  _this5.fault.people_type = 'teacher', _this5.fault.service_type = 'fault';if (!
+                  res) {_context3.next = 15;break;}
                   _this5.active = 1;_context3.next = 6;return (
                     _this5.$http({
                       url: '/teacher/fault',
                       method: 'POST',
                       data: _this5.fault }));case 6:_yield$_this5$$http = _context3.sent;row = _yield$_this5$$http.data;
 
-                  if (row.status == 201) {
-                    uni.showModal({
-                      title: '提示',
-                      content: row.message,
-                      success: function success(res) {
-                        if (res.confirm) {
-                          uni.reLaunch({
-                            url: './index' });
+                  console.log(_this5.fault);if (!(
+                  row.status == 201)) {_context3.next = 15;break;}_context3.next = 12;return (
+                    _this5.$http({
+                      url: '/email/admin',
+                      method: 'GET' }));case 12:_yield$_this5$$http2 = _context3.sent;_row = _yield$_this5$$http2.data;
 
-                        } else if (res.cancel) {
-                          uni.navigateTo({
-                            url: './fault' });
+                  uni.showModal({
+                    title: '提示',
+                    content: _row.message,
+                    success: function success(res) {
+                      if (res.confirm) {
+                        uni.reLaunch({
+                          url: './index' });
 
-                        }
-                      } });
+                      } else if (res.cancel) {
+                        uni.navigateTo({
+                          url: './fault' });
 
-                  }case 9:case "end":return _context3.stop();}}}, _callee3);}));return function (_x) {return _ref.apply(this, arguments);};}());
+                      }
+                    } });case 15:case "end":return _context3.stop();}}}, _callee3);}));return function (_x) {return _ref.apply(this, arguments);};}());
+
+
 
 
     },
@@ -414,7 +411,6 @@ var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-fo
         setTimeout(function () {
           _this6.save(); //代码正常执行！
         }, 5000);
-
       });
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
@@ -423,7 +419,7 @@ var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-fo
 
 /***/ 120:
 /*!******************************************************************************************************!*\
-  !*** E:/桌面/信息服务平台/pages/teacher/fault.vue?vue&type=style&index=0&id=4a67938c&lang=scss&scoped=true& ***!
+  !*** E:/桌面/applet/pages/teacher/fault.vue?vue&type=style&index=0&id=4a67938c&lang=scss&scoped=true& ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -439,7 +435,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ 121:
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/信息服务平台/pages/teacher/fault.vue?vue&type=style&index=0&id=4a67938c&lang=scss&scoped=true& ***!
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/applet/pages/teacher/fault.vue?vue&type=style&index=0&id=4a67938c&lang=scss&scoped=true& ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {

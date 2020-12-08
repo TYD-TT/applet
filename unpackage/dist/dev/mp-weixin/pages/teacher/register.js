@@ -2,7 +2,7 @@
 
 /***/ 122:
 /*!******************************************************************!*\
-  !*** E:/桌面/信息服务平台/main.js?{"page":"pages%2Fteacher%2Fregister"} ***!
+  !*** E:/桌面/applet/main.js?{"page":"pages%2Fteacher%2Fregister"} ***!
   \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18,7 +18,7 @@ createPage(_register.default);
 
 /***/ 123:
 /*!***********************************************!*\
-  !*** E:/桌面/信息服务平台/pages/teacher/register.vue ***!
+  !*** E:/桌面/applet/pages/teacher/register.vue ***!
   \***********************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -59,7 +59,7 @@ component.options.__file = "pages/teacher/register.vue"
 
 /***/ 124:
 /*!******************************************************************************************!*\
-  !*** E:/桌面/信息服务平台/pages/teacher/register.vue?vue&type=template&id=142f66a9&scoped=true& ***!
+  !*** E:/桌面/applet/pages/teacher/register.vue?vue&type=template&id=142f66a9&scoped=true& ***!
   \******************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -81,7 +81,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ 125:
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/信息服务平台/pages/teacher/register.vue?vue&type=template&id=142f66a9&scoped=true& ***!
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/applet/pages/teacher/register.vue?vue&type=template&id=142f66a9&scoped=true& ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -94,13 +94,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   evanForm: function() {
-    return __webpack_require__.e(/*! import() | components/evan-form/evan-form */ "components/evan-form/evan-form").then(__webpack_require__.bind(null, /*! @/components/evan-form/evan-form.vue */ 151))
+    return Promise.all(/*! import() | components/evan-form/evan-form */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/evan-form/evan-form")]).then(__webpack_require__.bind(null, /*! @/components/evan-form/evan-form.vue */ 167))
   },
   evanFormItem: function() {
-    return __webpack_require__.e(/*! import() | components/evan-form-item/evan-form-item */ "components/evan-form-item/evan-form-item").then(__webpack_require__.bind(null, /*! @/components/evan-form-item/evan-form-item.vue */ 158))
+    return __webpack_require__.e(/*! import() | components/evan-form-item/evan-form-item */ "components/evan-form-item/evan-form-item").then(__webpack_require__.bind(null, /*! @/components/evan-form-item/evan-form-item.vue */ 174))
   },
   uniSteps: function() {
-    return __webpack_require__.e(/*! import() | components/uni-steps/uni-steps */ "components/uni-steps/uni-steps").then(__webpack_require__.bind(null, /*! @/components/uni-steps/uni-steps.vue */ 144))
+    return __webpack_require__.e(/*! import() | components/uni-steps/uni-steps */ "components/uni-steps/uni-steps").then(__webpack_require__.bind(null, /*! @/components/uni-steps/uni-steps.vue */ 160))
   }
 }
 var render = function() {
@@ -118,7 +118,7 @@ render._withStripped = true
 
 /***/ 126:
 /*!************************************************************************!*\
-  !*** E:/桌面/信息服务平台/pages/teacher/register.vue?vue&type=script&lang=js& ***!
+  !*** E:/桌面/applet/pages/teacher/register.vue?vue&type=script&lang=js& ***!
   \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -134,7 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ 127:
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/信息服务平台/pages/teacher/register.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/applet/pages/teacher/register.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -204,7 +204,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-form/utils.js */ 38));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var LbPicker = function LbPicker() {Promise.all(/*! require.ensure | components/lb-picker/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/lb-picker/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/lb-picker */ 136));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-form/utils.js */ 38));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var LbPicker = function LbPicker() {Promise.all(/*! require.ensure | components/lb-picker/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/lb-picker/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/lb-picker */ 152));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 {
@@ -275,7 +275,139 @@ var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-fo
 
       {
         label: '国际教育学院',
-        value: '13' }],
+        value: '13' },
+
+      {
+        label: '党委办公室',
+        value: '14' },
+
+      {
+        label: '组织部',
+        value: '15' },
+
+      {
+        label: '宣传部',
+        value: '16' },
+
+      {
+        label: '统战部',
+        value: '17' },
+
+      {
+        label: '纪检委',
+        value: '18' },
+
+      {
+        label: '学生工作部',
+        value: '19' },
+
+      {
+        label: '武装部',
+        value: '20' },
+
+      {
+        label: '工会',
+        value: '21' },
+
+      {
+        label: '团委',
+        value: '22' },
+
+      {
+        label: '机关党委',
+        value: '23' },
+
+      {
+        label: '校长办公室',
+        value: '24' },
+
+      {
+        label: '发展规划处',
+        value: '25' },
+
+      {
+        label: '教务处',
+        value: '26' },
+
+      {
+        label: '科研处',
+        value: '27' },
+
+      {
+        label: '人事处',
+        value: '28' },
+
+      {
+        label: '学生处',
+        value: '29' },
+
+      {
+        label: '招生就业指导处',
+        value: '30' },
+
+      {
+        label: '国有资产管理处',
+        value: '31' },
+
+      {
+        label: '计划财务处',
+        value: '32' },
+
+      {
+        label: '后勤管理处',
+        value: '33' },
+
+      {
+        label: '国际合作交流处',
+        value: '34' },
+
+      {
+        label: '审计处',
+        value: '35' },
+
+      {
+        label: '基建处',
+        value: '36' },
+
+      {
+        label: '保卫处',
+        value: '37' },
+
+      {
+        label: '离退休处',
+        value: '38' },
+
+      {
+        label: '现代教育技术中心',
+        value: '39' },
+
+      {
+        label: '图书馆',
+        value: '40' },
+
+      {
+        label: '学报编辑部',
+        value: '41' },
+
+      {
+        label: '教学研究与评估办公室',
+        value: '42' },
+
+      {
+        label: '工程训练中心',
+        value: '43' },
+
+      {
+        label: '心理健康教育中心',
+        value: '44' },
+
+      {
+        label: '教师教学发展中心',
+        value: '45' },
+
+      {
+        label: '档案馆',
+        value: '46' }],
 
 
       label1: "",
@@ -319,9 +451,9 @@ var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-fo
           message: "请输入工号" },
 
         {
-          min: 8,
-          max: 8,
-          message: '工号长度为6' }],
+          min: 10,
+          max: 6,
+          message: '工号长度为6-8位' }],
 
 
         department: {
@@ -397,7 +529,7 @@ var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-fo
 
 /***/ 128:
 /*!*********************************************************************************************************!*\
-  !*** E:/桌面/信息服务平台/pages/teacher/register.vue?vue&type=style&index=0&id=142f66a9&lang=scss&scoped=true& ***!
+  !*** E:/桌面/applet/pages/teacher/register.vue?vue&type=style&index=0&id=142f66a9&lang=scss&scoped=true& ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -413,7 +545,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ 129:
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/信息服务平台/pages/teacher/register.vue?vue&type=style&index=0&id=142f66a9&lang=scss&scoped=true& ***!
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/桌面/applet/pages/teacher/register.vue?vue&type=style&index=0&id=142f66a9&lang=scss&scoped=true& ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {

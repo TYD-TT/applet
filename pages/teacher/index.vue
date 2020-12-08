@@ -10,7 +10,7 @@
 			<view class="title">服务项目</view>
 			<view class="adv"><image src="../../static/img/adv-logo.png" class="avd-img"></image></view>
 			<view class="list">
-				<view style="display: flex;flex-wrap: wrap; height: 85vw;">
+				<view style="display: flex;flex-wrap: wrap; height: 110vw;">
 					<view v-for="(item, index) in lists" :key="index" style="width: 33.33%; height: 30vw;  border: 1px soid black;" @click="jump(item.url)">
 						<view class="list_logo"><image :src="item.img" class="list_img"></image></view>
 						<view class="list_title">{{ item.title }}</view>
@@ -53,12 +53,12 @@ export default {
 				{
 					id:3,
 					title:'申请进度',
-					url:'./teacher'
+					url:'./steps'
 				},
 				{
 					id:4,
 					title:'意见反馈',
-					url:'./teacher'
+					url:'../feedback/feedback'
 				}
 			],
 			// localStorage存储的数据
@@ -99,6 +99,12 @@ export default {
 					title: '网络故障上报',
 					img: '../../static/img/gzsb.png',
 					url: './fault'
+				},
+				{
+					id: 5,
+					title: '安装评价',
+					img: '../../static/img/pingjia.png',
+					url: './appraise'
 				}
 			]
 		};
@@ -214,7 +220,7 @@ export default {
 		.list {
 			border: 2rpx solid #e6e6e6;
 			width: 90vw;
-			height: 85vw;
+			height: 120vw;
 			margin: 30rpx auto;
 			.list_logo {
 				margin: 30rpx auto 0 auto;

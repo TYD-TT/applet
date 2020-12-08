@@ -46,7 +46,7 @@
 					<view class="login-type-form">
 						<view class="input-item">
 							<text class="iconfont iconzhanghuffffffpx"></text>
-							<input class="login-type-input" type="number" name="account" v-model="teacherLogin.account" placeholder="请输入教工号" maxlength="11" />
+							<input class="login-type-input" type="text" name="account" v-model="teacherLogin.account" placeholder="请输入教工号" maxlength="11" />
 						</view>
 						<view class="input-item">
 							<text class="iconfont iconzhanghuffffffpx"></text>
