@@ -1,5 +1,5 @@
-const BASE_URL = 'https://tianyudong.picp.vip'
-// const BASE_URL = 'http://127.0.0.1:3000'
+// const BASE_URL = 'https://tianyudong.picp.vip'
+const BASE_URL = 'http://127.0.0.1:3000'
 export const myRequest = (options) => {
 	return new Promise((resolve, reject) => {
 		uni.request({

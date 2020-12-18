@@ -1,7 +1,7 @@
 <template>
 	<view class="feedback">
 		<view class="feedback_title">意见反馈</view>
-		<view class="tishi">各教职员工如有其他问题，请拨打现教中心信息技术科电话：2909864。</view>
+		<view class="tishi">各教职员工/同学如有其他问题，请拨打现教中心信息技术科电话：2909864。</view>
 		<view class="feedback_form">
 			<view class="evan-form-show">
 				<view class="feedback-title">反馈意见</view>
@@ -27,9 +27,10 @@
 			</view>
 			<view class="button">
 				<button @click="back" class="evan-form-show__button">返回</button>
-				<button @click="submit1" class="evan-form-show__button edit_button">提交</button>
+				<button @click="submit1" class="evan-form-show__button edit_button" @tap="openLoading">提交</button>
 			</view>
 		</view>
+		<mi-loading ref="Loading" title="上传中" hasMask="true"></mi-loading>
 	</view>
 </template>
 
@@ -45,6 +46,7 @@ export default {
 	},
 	data() {
 		return {
+			hideRequiredAsterisk: false,
 			fb_msg: {msg:''},
 			imgURL: [],
 			imageLists: [],
@@ -52,6 +54,13 @@ export default {
 		};
 	},
 	methods: {
+		// 上传中
+		openLoading() {
+			this.$refs.Loading.show();
+			setTimeout(() => {
+				this.$refs.Loading.hide();
+			}, 3000);
+		},
 		back() {
 			uni.navigateBack({
 				delta: 1
@@ -59,7 +68,7 @@ export default {
 		},
 		// 添加图片
 		addImage() {
-			const count = 4 - this.imageLists.length;
+			const count = 3 - this.imageLists.length;
 			uni.chooseImage({
 				count: count,
 				success: res => {
@@ -89,63 +98,55 @@ export default {
 					this.imgURL.push(uploadFileRes.data);
 				}
 			});
-			console.log('this.$http');
-			console.log(result);
 			return result;
 		},
 		del(index) {
 			this.imageLists.splice(index, 1);
 		},
-		save() {
-			this.$refs.fault.validate(async res => {
-				this.fault.creat_time = this.$getFormatDate.getFormatDate();
-				(this.fault.people_type = 'teacher'), (this.fault.service_type = 'fault');
-				if (res) {
+		async save() {
+				this.fb_msg.creat_time = this.$getFormatDate.getFormatDate();
+				this.fb_msg.people_type = 'teacher'
+				this.fb_msg.service_type = 'feedback'
 					this.active = 1;
 					const { data: row } = await this.$http({
-						url: '/teacher/fault',
+						url: '/feedback',
 						method: 'POST',
-						data: this.fault
+						data: this.fb_msg
 					});
-					console.log(this.fault);
 					if (row.status == 201) {
 						uni.showModal({
 							title: '提示',
 							content: row.message,
 							success: res => {
-								if (res.confirm) {
-									uni.reLaunch({
-										url: './index'
+								if (res.confirm ) {
+									uni.navigateBack({
+									    delta: 1
 									});
 								} else if (res.cancel) {
 									uni.navigateTo({
-										url: './fault'
+										url: './feedback'
 									});
 								}
 							}
 						});
 					}
-				}
-			});
 		},
 		// 上传图片
 		async submit1() {
-			const {data:res} = await this.$http({
-				url:'/teacher/feedback',
-				method:'POST',
-				data:this.fb_msg
-			})
-			
-			console.log(this.fb_msg)
-			// new Promise((resolve, reject) => {
-			// 	this.submit();
-			// 	resolve();
-			// }).then(() => {
-			// 	this.fault.imgURL = this.imgURL;
-			// 	setTimeout(() => {
-			// 		this.save(); //代码正常执行！
-			// 	}, 5000);
-			// });
+			if (this.imageLists.length == '0') {
+				this.fb_msg.imgURL = this.imgURL;
+				this.save();
+			} else {
+				new Promise((resolve, reject) => {
+					this.submit();
+					resolve();
+				}).then(() => {
+					this.fb_msg.imgURL = this.imgURL;
+					setTimeout(() => {
+						this.save(); //代码正常执行！
+					}, 3000);
+				});
+			}
 		}
 	}
 };

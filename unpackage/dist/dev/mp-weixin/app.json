@@ -4,7 +4,7 @@
     "pages/student/index",
     "pages/student/basicInformation",
     "pages/student/changePassword",
-    "pages/student/student",
+    "pages/student/content",
     "pages/teacher/index",
     "pages/teacher/basic",
     "pages/teacher/password",
@@ -16,7 +16,8 @@
     "pages/teacher/register",
     "pages/feedback/feedback",
     "pages/teacher/steps",
-    "pages/teacher/appraise"
+    "pages/teacher/appraise",
+    "pages/teacher/advisory"
   ],
   "subPackages": [],
   "window": {
@@ -28,8 +29,14 @@
     "enablePullDownRefresh": true
   },
   "usingComponents": {
+    "bottom-menu": "/components/bottom-menu/bottom-menu",
+    "mi-loading": "/components/mi-loading/mi-loading",
     "lb-picker": "/components/lb-picker/index",
-    "uni-steps": "/components/uni-steps/uni-steps"
+    "uni-steps": "/components/uni-steps/uni-steps",
+    "t-table": "/components/t-table/t-table",
+    "t-th": "/components/t-table/t-th",
+    "t-tr": "/components/t-table/t-tr",
+    "t-td": "/components/t-table/t-td"
   },
-  "sitemapLocation": "sitemap13.json"
+  "sitemapLocation": "sitemap90.json"
 }

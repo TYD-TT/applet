@@ -208,12 +208,12 @@ var _default =
   data: function data() {
     return {
       studentLogin: {
-        account: '',
-        name: '' },
+        account: '17031110129',
+        name: '田玉东' },
 
       teacherLogin: {
-        account: '',
-        name: '' },
+        account: '31110129',
+        name: '田' },
 
       btnLoading: false,
       reqBody: {},

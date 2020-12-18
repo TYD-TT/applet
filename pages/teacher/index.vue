@@ -18,16 +18,55 @@
 				</view>
 			</view>
 		</view>
-		<view class="teacher_index_bottom">
-			<view class="bottom_sy" v-for="item in btm_lists" :key="item.id" @click="btm_nav(item.url)">{{item.title}}</view>
+		<!-- 文章列表 -->
+		<view class="container999"  @touchmove="refreshMove" >
+			<view class="title">文章列表</view>
+			<view class="nav">
+				<!-- 导航栏 agents导航栏标题 -->
+				<navTab ref="navTab" :tabTitle="tabTitle" @changeTab="changeTab"></navTab>
+			</view>
+			<!-- swiper切换 swiper-item表示一页 scroll-view表示滚动视窗 -->
+			<swiper style="min-height: 100vh;" :current="currentTab" @change="swiperTab">
+				<swiper-item v-for="(listItem, listIndex) in list" :key="listIndex">
+					<scroll-view style="height: 100%;" scroll-y="true"  scroll-with-animation :scroll-into-view="toView">
+						<view class="content">
+							<view class="card" v-for="(item, index) in listItem" v-if="listItem.length > 0" :key="index">
+							<view class="" style="height: 100%; width: 35vw;">
+								<image src="../../static/img/yysbd.jpg" mode="aspectFill"></image>
+							</view>
+							<view style="height: 100%; width: 55vw; background-color: #FFF;">
+								<view style="margin-left: 20px;font-size: 18px;" @click="jump_list(items.id)">{{ item }}</view>
+							</view>
+							</view>
+						<view class="more">
+							<view style="display: block;float: right;">{{listIndex}}more&gt;&gt;</view>				
+						</view>
+						</view>
+						<view class="noCard" v-if="listItem.length === 0">暂无信息</view>
+					</scroll-view>
+
+				</swiper-item>
+			</swiper>
 		</view>
+		<view class="teacher_index_bottom"><bottom-menu></bottom-menu></view>
 	</view>
 </template>
 
 <script>
+const util = require('../../util/util.js');
+import refresh from '@/components/content-list/refresh.vue';
+import navTab from '@/components/content-list/navTab.vue';
+import tabBar from '@/components/content-list/tabBar.vue';
 export default {
+	components: { refresh, navTab, tabBar },
 	data() {
 		return {
+			currentPage: 'index',
+			toView: '', //回到顶部id
+			tabTitle: ['通知公告', '常见问题'], //导航栏格式 --导航栏组件
+			currentTab: 0, //sweiper所在页
+			pages: [1, 1, 1, 1], //第几个swiper的第几页
+			list: [[1, 2, 3], ['a', 'b', 'c']], //数据格式
 			// 学生基本信息
 			teacherMessage: {
 				acount: '',
@@ -39,28 +78,6 @@ export default {
 				phone: '',
 				ID_number: ''
 			},
-			btm_lists:[
-				{
-					id:1,
-					title:'首页',
-					url:'./index'
-				},
-				{
-					id:2,
-					title:'基本信息',
-					url:'./basic'
-				},
-				{
-					id:3,
-					title:'申请进度',
-					url:'./steps'
-				},
-				{
-					id:4,
-					title:'意见反馈',
-					url:'../feedback/feedback'
-				}
-			],
 			// localStorage存储的数据
 			Storage_data: '',
 			lists: [
@@ -101,10 +118,16 @@ export default {
 					url: './fault'
 				},
 				{
-					id: 5,
+					id: 6,
 					title: '安装评价',
 					img: '../../static/img/pingjia.png',
 					url: './appraise'
+				},
+				{
+					id: 7,
+					title: '网站群技术咨询',
+					img: '../../static/img/zx.png',
+					url: './advisory'
 				}
 			]
 		};
@@ -118,32 +141,32 @@ export default {
 			uni.getStorage({
 				key: 'teacher_account',
 				success: async res => {
-					const {data : row} = await this.$http({
+					const { data: row } = await this.$http({
 						url: `/select_message?account=${res.data}&user=teacher`,
 						method: 'GET'
 					});
 					this.teacherMessage = JSON.parse(row.data)[0];
-					this.judge()
+					this.judge();
 				}
 			});
 		},
 		judge() {
 			const teacherMessage = this.teacherMessage;
-			if(teacherMessage.ID_number == null && teacherMessage.phone == null ){
+			if (teacherMessage.ID_number == null && teacherMessage.phone == null) {
 				uni.showModal({
-				    title: '提示',
-				    content: '请先完善基本信息',
-				    success: (res) => {
-				        if (res.confirm) {
-				            uni.redirectTo({
-				            	url:'./basic'
-				            })
-				        } else if (res.cancel) {
-				            uni.redirectTo({
-				            	url:'../index/index'
-				            })
-				        }
-				    }
+					title: '提示',
+					content: '请先完善基本信息',
+					success: res => {
+						if (res.confirm) {
+							uni.redirectTo({
+								url: './basic'
+							});
+						} else if (res.cancel) {
+							uni.redirectTo({
+								url: '../index/index'
+							});
+						}
+					}
 				});
 			}
 		},
@@ -158,6 +181,24 @@ export default {
 			uni.navigateTo({
 				url: value
 			});
+		},
+		toTop() {
+			this.toView = '';
+			setTimeout(() => {
+				this.toView = 'top' + this.currentTab;
+			}, 10);
+		},
+		changeTab(index) {
+			this.currentTab = index;
+		},
+		// swiper 滑动
+		swiperTab: function(e) {
+			var index = e.detail.current; //获取索引
+			this.$refs.navTab.longClick(index);
+		},
+		// 刷新touch监听
+		refreshMove(e) {
+			this.$refs.refresh.refreshMove(e);
 		},
 	}
 };
@@ -198,7 +239,6 @@ export default {
 		}
 	}
 	.content {
-		height: 200px;
 		.title {
 			font-size: 48rpx;
 			font-weight: 600;
@@ -220,7 +260,7 @@ export default {
 		.list {
 			border: 2rpx solid #e6e6e6;
 			width: 90vw;
-			height: 120vw;
+			height: 115vw;
 			margin: 30rpx auto;
 			.list_logo {
 				margin: 30rpx auto 0 auto;
@@ -247,14 +287,11 @@ export default {
 		flex-wrap: wrap;
 		bottom: 0;
 		width: 99vw;
-		border: 1px solid black;
-		border-bottom: none;
 		height: 100rpx;
-		border-radius: 3px;
 		margin: 0 auto;
 		text-align: center;
 		position: fixed;
-		background-color: rgba(120,214,239,0.5);
+		background-color: rgba(120, 214, 239, 0.5);
 		.bottom_sy,
 		.bottom_xx,
 		.bottom_jd,
@@ -267,5 +304,100 @@ export default {
 			line-height: 100rpx;
 		}
 	}
+}
+.container999 {
+	.title {
+		color: #000000;
+		font-size: 48rpx;
+		font-weight: 600;
+		width: 90vw;
+		margin: 40rpx auto ;
+	}
+	width: 100vw;
+	font-size: 28upx;
+	height: 75vh;
+	overflow: hidden;
+	color: #6b8082;
+	position: relative;
+	background-color: #f5f5f5;
+}
+
+.card {
+	width: 90%;
+	display: flex;
+	height: 150rpx;
+	line-height: 150rpx;
+	background-color: white;
+	margin: 10rpx auto 2upx auto;
+	background: #ffffff;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	position: relative;
+	image {
+		width: 35vw;
+		height: 100%;
+	}
+}
+
+.noCard {
+	width: 90%;
+	height: 200upx;
+	margin: auto;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #999999;
+	box-shadow: 0 0 10upx 0 rgba(0, 0, 0, 0.1);
+	border-radius: 10upx;
+}
+
+.nav {
+	left: 0;
+	color: white;
+	width: 90vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	background-color: #50b7ea;
+	z-index: 996;
+}
+
+.searchInput999 {
+	width: 90%;
+	margin: 0 auto;
+	background: white;
+	border-radius: 30upx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 56upx;
+}
+
+.search999 {
+	width: 32upx;
+	height: 32upx;
+}
+
+.searchBox999 {
+	width: 56upx;
+	height: 56upx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input999 {
+	color: #999;
+	width: 80%;
+}
+.more{
+	width: 90vw;
+	margin: 10rpx auto;
+	height: 30px;
+	color: #000000;
+	line-height: 30px;
+	background-color: #fff;
 }
 </style>

@@ -4,6 +4,7 @@
     "pages/student/index",
     "pages/student/basicInformation",
     "pages/student/changePassword",
+    "pages/student/content",
     "pages/student/student",
     "pages/teacher/index",
     "pages/teacher/basic",
@@ -30,5 +31,6 @@
   "usingComponents": {
     "lb-picker": "/components/lb-picker/index",
     "uni-steps": "/components/uni-steps/uni-steps"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

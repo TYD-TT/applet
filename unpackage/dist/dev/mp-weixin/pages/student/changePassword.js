@@ -94,10 +94,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   evanForm: function() {
-    return Promise.all(/*! import() | components/evan-form/evan-form */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/evan-form/evan-form")]).then(__webpack_require__.bind(null, /*! @/components/evan-form/evan-form.vue */ 167))
+    return Promise.all(/*! import() | components/evan-form/evan-form */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/evan-form/evan-form")]).then(__webpack_require__.bind(null, /*! @/components/evan-form/evan-form.vue */ 221))
   },
   evanFormItem: function() {
-    return __webpack_require__.e(/*! import() | components/evan-form-item/evan-form-item */ "components/evan-form-item/evan-form-item").then(__webpack_require__.bind(null, /*! @/components/evan-form-item/evan-form-item.vue */ 174))
+    return __webpack_require__.e(/*! import() | components/evan-form-item/evan-form-item */ "components/evan-form-item/evan-form-item").then(__webpack_require__.bind(null, /*! @/components/evan-form-item/evan-form-item.vue */ 228))
   }
 }
 var render = function() {
@@ -213,7 +213,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-form/utils.js */ 38));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var LbPicker = function LbPicker() {Promise.all(/*! require.ensure | components/lb-picker/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/lb-picker/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/lb-picker */ 152));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-form/utils.js */ 38));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var LbPicker = function LbPicker() {Promise.all(/*! require.ensure | components/lb-picker/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/lb-picker/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/lb-picker */ 164));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 {
@@ -755,7 +755,6 @@ var _utils = _interopRequireDefault(__webpack_require__(/*! @/components/evan-fo
 
     // 查询学生基本信息
     obtain: function obtain() {var _this3 = this;
-      console.log(this.$getFormatDate.getFormatDate());
       uni.getStorage({
         key: 'student_account',
         success: function () {var _success = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3(res) {var _yield$_this3$$http, row;return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:_context3.next = 2;return (

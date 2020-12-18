@@ -61,9 +61,10 @@
 			</view>
 			<view class="button">
 				<button @click="back" class="evan-form-show__button">返回</button>
-				<button @click="submit1" class="evan-form-show__button edit_button">提交</button>
+				<button @click="submit1" class="evan-form-show__button edit_button" @tap="openLoading">提交</button>
 			</view>
 		</view>
+		<mi-loading ref="Loading" title="上传中" hasMask="true"></mi-loading>
 	</view>
 </template>
 
@@ -151,6 +152,12 @@ export default {
 		this.$refs.fault.setRules(this.rules);
 	},
 	methods: {
+		openLoading() {
+			this.$refs.Loading.show();
+			setTimeout(() => {
+				this.$refs.Loading.hide();
+			}, 6000);
+		},
 		//检查手机号
 		isCellPhone(val) {
 			if (!/^1(3|4|5|6|7|8)\d{9}$/.test(val)) {
@@ -214,8 +221,6 @@ export default {
 					this.imgURL.push(uploadFileRes.data);
 				}
 			});
-			console.log('this.$http');
-			console.log(result);
 			return result;
 		},
 		del(index) {
@@ -224,7 +229,8 @@ export default {
 		save() {
 			this.$refs.fault.validate(async res => {
 				this.fault.creat_time = this.$getFormatDate.getFormatDate();
-				(this.fault.people_type = 'teacher'), (this.fault.service_type = 'fault');
+				this.fault.people_type = 'teacher';
+				this.fault.service_type = 'fault';
 				if (res) {
 					this.active = 1;
 					const { data: row } = await this.$http({
@@ -234,10 +240,10 @@ export default {
 					});
 					console.log(this.fault);
 					if (row.status == 201) {
-						const {data:row} = await this.$http({
-							url:'/email/admin',
-							method:'GET'
-						})
+						const { data: row } = await this.$http({
+							url: '/email/admin',
+							method: 'GET'
+						});
 						uni.showModal({
 							title: '提示',
 							content: row.message,
@@ -258,15 +264,20 @@ export default {
 			});
 		},
 		submit1() {
-			new Promise((resolve, reject) => {
-				this.submit();
-				resolve();
-			}).then(() => {
+			if (this.imageLists.length == '0') {
 				this.fault.imgURL = this.imgURL;
-				setTimeout(() => {
-					this.save(); //代码正常执行！
-				}, 5000);
-			});
+				this.save();
+			} else {
+				new Promise((resolve, reject) => {
+					this.submit();
+					resolve();
+				}).then(() => {
+					this.fault.imgURL = this.imgURL;
+					setTimeout(() => {
+						this.save(); //代码正常执行！
+					}, 3000);
+				});
+			}
 		}
 	}
 };

@@ -136,14 +136,10 @@
 <script>
 import uniCollapse from '@/components/uni-collapse/uni-collapse.vue';
 import uniCollapseItem from '@/components/uni-collapse-item/uni-collapse-item.vue';
-import tTable from '@/components/t-table/t-table.vue';
-import tTh from '@/components/t-table/t-th.vue';
-import tTr from '@/components/t-table/t-tr.vue';
-import tTd from '@/components/t-table/t-td.vue';
 import uniPopup from '@/components/uni-popup/uni-popup.vue';
 import uniRate from '@/components/uni-rate/uni-rate.vue';
 export default {
-	components: { uniCollapse, uniCollapseItem, tTable, tTh, tTr, tTd, uniPopup, uniRate },
+	components: { uniCollapse, uniCollapseItem, uniPopup, uniRate },
 
 	data() {
 		return {
@@ -235,15 +231,15 @@ export default {
 			var time = ' ';
 			console.log('status:' + row.status);
 			switch (row.status) {
-				case '-1':
+				case -1:
 					time = ' ';
 					this.active = 1;
 					break;
-				case '0':
+				case 0:
 					time = ' ';
 					this.active = 2;
 					break;
-				case '1':
+				case 1:
 					time = update_time;
 					this.active = 3;
 					break;

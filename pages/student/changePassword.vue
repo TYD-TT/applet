@@ -616,7 +616,6 @@ export default {
 
 		// 查询学生基本信息
 		obtain() {
-			console.log(this.$getFormatDate.getFormatDate());
 			uni.getStorage({
 				key: 'student_account',
 				success: async res => {

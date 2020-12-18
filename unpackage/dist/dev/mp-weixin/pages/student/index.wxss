@@ -1,5 +1,5 @@
 .student_index.data-v-30040555 {
-  height: 255vw;
+  height: 240vw;
   width: 100vw;
 }
 .student_index .top.data-v-30040555 {
@@ -104,11 +104,15 @@
 }
 .fw_list.data-v-30040555 {
   width: 100%;
-  height: 180rpx;
-  line-height: 180rpx;
+  height: 150rpx;
+  line-height: 150rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   margin-bottom: 10px;
+}
+.fw_list image.data-v-30040555 {
+  width: 35vw;
+  height: 100%;
 }
 

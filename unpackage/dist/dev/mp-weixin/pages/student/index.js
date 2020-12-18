@@ -167,16 +167,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
     return {
+      // 文章列表
+      contentList: [],
       // 学生基本信息
       studentMessage: {
         acount: '',
@@ -207,7 +203,7 @@ var _default =
         id: 2,
         title: '意见反馈',
         img: '../../static/img/yjfk.png',
-        url: './student' }],
+        url: '../feedback/feedback' }],
 
 
       btm_lists: [
@@ -224,31 +220,41 @@ var _default =
       {
         id: 3,
         title: '申请进度',
-        url: './student' },
+        url: './steps' },
 
       {
         id: 4,
         title: '意见反馈',
-        url: './student' }] };
+        url: '../feedback/feedback' }] };
 
 
 
   },
   created: function created() {
     this.selectStudent();
+    this.select_content();
   },
   methods: {
+    // 查询文章列表
+    select_content: function select_content() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var _yield$_this$$http, res;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
+                  _this.$http({
+                    url: '/select/contents',
+                    method: 'GET' }));case 2:_yield$_this$$http = _context.sent;res = _yield$_this$$http.data;
+
+                console.log(res);
+                _this.contentList = res.data;case 6:case "end":return _context.stop();}}}, _callee);}))();
+    },
     // 查询学生信息
-    selectStudent: function selectStudent() {var _this = this;
+    selectStudent: function selectStudent() {var _this2 = this;
       uni.getStorage({
         key: 'student_account',
-        success: function () {var _success = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(res) {var _yield$_this$$http, row;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
-                      _this.$http({
+        success: function () {var _success = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2(res) {var _yield$_this2$$http, row;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
+                      _this2.$http({
                         url: "/select_message?account=".concat(res.data, "&user=student"),
-                        method: 'GET' }));case 2:_yield$_this$$http = _context.sent;row = _yield$_this$$http.data;
+                        method: 'GET' }));case 2:_yield$_this2$$http = _context2.sent;row = _yield$_this2$$http.data;
 
-                    _this.studentMessage = JSON.parse(row.data)[0];
-                    _this.judge();case 6:case "end":return _context.stop();}}}, _callee);}));function success(_x) {return _success.apply(this, arguments);}return success;}() });
+                    _this2.studentMessage = JSON.parse(row.data)[0];
+                    _this2.judge();case 6:case "end":return _context2.stop();}}}, _callee2);}));function success(_x) {return _success.apply(this, arguments);}return success;}() });
 
 
     },
@@ -279,9 +285,20 @@ var _default =
         url: value });
 
     },
+    jump_list: function jump_list(value) {
+      console.log(value);
+      uni.navigateTo({
+        url: "./content?id=".concat(value) });
+
+    },
     btm_nav: function btm_nav(value) {
       uni.navigateTo({
         url: value });
+
+    },
+    sfw: function sfw() {
+      uni.navigateTo({
+        url: './content' });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

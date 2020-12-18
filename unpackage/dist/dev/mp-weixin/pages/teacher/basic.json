@@ -3,6 +3,7 @@
   "usingComponents": {
     "evan-form": "/components/evan-form/evan-form",
     "evan-form-item": "/components/evan-form-item/evan-form-item",
+    "bottom-menu": "/components/bottom-menu/bottom-menu",
     "lb-picker": "/components/lb-picker/index"
   }
 }

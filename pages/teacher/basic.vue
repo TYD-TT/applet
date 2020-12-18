@@ -19,11 +19,6 @@
 				<evan-form-item label="手机：" prop="phone">
 					<input class="form-input" type="number" placeholder-class="form-input-placeholder" v-model="teacherForm.phone" placeholder="请输入手机号" />
 				</evan-form-item>
-				<!-- <evan-form-item label="证件类型：" prop="ID_type">
-					<input class="form-input" disabled placeholder-class="form-input-placeholder" v-model="teacherForm.ID_type" placeholder="请输入证件类型" />
-				</evan-form-item>
-				<evan-form-item label="身份证号：" prop="ID_number">
-					<input class="form-input" placeholder-class="form-input-placeholder" v-model="teacherForm.ID_number" placeholder="请输入身份证号" /> -->
 				</evan-form-item>
 				<evan-form-item label="所在院系：" prop="department_major">
 					<view class="item-content" @click="handleTap()" style="text-align: right;width: 100%;font-size: 28rpx;">
@@ -49,6 +44,7 @@
 			<button @click="back" class="evan-form-show__button">返回</button>
 			<button @click="edit" class="evan-form-show__button edit_button">提交</button>
 		</view>
+		<bottom-menu />
 	</view>
 </template>
 

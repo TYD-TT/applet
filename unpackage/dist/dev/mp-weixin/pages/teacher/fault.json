@@ -5,6 +5,7 @@
     "evan-form-item": "/components/evan-form-item/evan-form-item",
     "uni-icons": "/components/uni-icons/uni-icons",
     "uni-steps": "/components/uni-steps/uni-steps",
+    "mi-loading": "/components/mi-loading/mi-loading",
     "lb-picker": "/components/lb-picker/index"
   }
 }

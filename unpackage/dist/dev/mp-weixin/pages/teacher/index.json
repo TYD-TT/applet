@@ -1,4 +1,9 @@
 {
   "navigationBarTitleText": "教师服务平台",
-  "usingComponents": {}
+  "usingComponents": {
+    "bottom-menu": "/components/bottom-menu/bottom-menu",
+    "refresh": "/components/content-list/refresh",
+    "nav-tab": "/components/content-list/navTab",
+    "tab-bar": "/components/content-list/tabBar"
+  }
 }

@@ -19,19 +19,13 @@
 			</view>
 		</view>
 		<view class="content">
-			<view class="title" style="margin-top: 20px;">服务列表</view>
+			<view class="title" style="margin-top: 20px;">文章列表</view>
 			<view class="" style="width: 90vw; margin: 20px  auto;background-color: #fafafa;">
-				<view class="fw_list" >
-					<view class="" style="height: 100%; width: 35vw;"><image src="../../static/img/yysbd.jpg" style="width: 100%;height: 100%;"></image></view>
-					<view class="" style="height: 100%; width: 55vw; background-color: #FFF;">运营商绑定</view>
-				</view>
-				<view class="fw_list" >
-					<view class="" style="height: 100%; width: 35vw;"><image src="../../static/img/gzpc.jpg" style="width: 100%;height: 100%;"></image></view>
-					<view class="" style="height: 100%; width: 55vw; background-color: #FFF;">网络故障排查</view>
-				</view>
-				<view class="fw_list" >
-					<view class="" style="height: 100%; width: 35vw;"><image src="../../static/img/rjzbh.jpg" style="width: 100%;height: 100%;"></image></view>
-					<view class="" style="height: 100%; width: 55vw; background-color: #FFF;">软件正版化</view>
+				<view class="fw_list" v-for="(items, index) in contentList" :key="index">
+					<view class="" style="height: 100%; width: 35vw;"><image :src="items.imgUrl" mode="aspectFill"></image></view>
+					<view style="height: 100%; width: 55vw; background-color: #FFF;">
+						<view style="margin-left: 20px;font-size: 18px;" @click="jump_list(items.id)">{{ items.title }}</view>
+					</view>
 				</view>
 			</view>
 		</view>
@@ -45,6 +39,8 @@
 export default {
 	data() {
 		return {
+			// 文章列表
+			contentList: [],
 			// 学生基本信息
 			studentMessage: {
 				acount: '',
@@ -75,7 +71,7 @@ export default {
 					id: 2,
 					title: '意见反馈',
 					img: '../../static/img/yjfk.png',
-					url: './student'
+					url: '../feedback/feedback'
 				}
 			],
 			btm_lists: [
@@ -92,20 +88,30 @@ export default {
 				{
 					id: 3,
 					title: '申请进度',
-					url: './student'
+					url: './steps'
 				},
 				{
 					id: 4,
 					title: '意见反馈',
-					url: './student'
+					url: '../feedback/feedback'
 				}
 			]
 		};
 	},
 	created() {
 		this.selectStudent();
+		this.select_content();
 	},
 	methods: {
+		// 查询文章列表
+		async select_content() {
+			const { data: res } = await this.$http({
+				url: '/select/contents',
+				method: 'GET'
+			});
+			console.log(res);
+			this.contentList = res.data;
+		},
 		// 查询学生信息
 		selectStudent() {
 			uni.getStorage({
@@ -147,9 +153,20 @@ export default {
 				url: value
 			});
 		},
+		jump_list(value) {
+			console.log(value);
+			uni.navigateTo({
+				url: `./content?id=${value}`
+			});
+		},
 		btm_nav(value) {
 			uni.navigateTo({
 				url: value
+			});
+		},
+		sfw() {
+			uni.navigateTo({
+				url: './content'
 			});
 		}
 	}
@@ -158,7 +175,7 @@ export default {
 
 <style lang="less" scoped>
 .student_index {
-	height: 255vw;
+	height: 240vw;
 	width: 100vw;
 	.top {
 		height: 45vw;
@@ -255,9 +272,13 @@ export default {
 }
 .fw_list {
 	width: 100%;
-	height: 180rpx;
-	line-height: 180rpx;
+	height: 150rpx;
+	line-height: 150rpx;
 	display: flex;
 	margin-bottom: 10px;
+	image {
+		width: 35vw;
+		height: 100%;
+	}
 }
 </style>
